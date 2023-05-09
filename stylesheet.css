@@ -1,0 +1,11 @@
+.budget{
+    color: green;
+}
+.remainder{
+    color: red
+}
+.header{
+    font-size: 30px;
+    background-color: aqua;
+    margin-bottom: 2rem;
+}

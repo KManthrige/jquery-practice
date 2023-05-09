@@ -19,15 +19,15 @@ function addPurchase() {
 function caluculateBalance() {
     let totalCost = 0
     let remainder = 0
-    for (i = 0; i < purchases.length; i++){
+    for (i = 0; i < purchases.length; i++) {
         totalCost += Number(purchases[i].price)
         console.log('total cost', totalCost)
     }
-    remainder = budget-totalCost
+    remainder = budget - totalCost
     console.log('balance', remainder)
     let el = $('#remainingBudget')
     el.empty()
-    el.append(remainder)
+    el.append(remainder).addClass(remainder >= 0 ? 'budget' : 'remainder')
 }
 
 function displayPurchases() {
